@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 :root {
   font-family: "Poppins", sans-serif;
@@ -10,9 +10,525 @@
   transition: 5s;
 }
 .no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+  color-scheme: "light";
+}
+
+.slide-animation {
+  transform: translateX(100px);
+  transition: 5s;
+}
+
+.no-scrollbar {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
+}
+
+/* ============================================
+   MOBILE RESPONSIVE FONT SIZES
+   ============================================ */
+
+/* Small Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
+  /* Hero Section */
+  .text-4xl {
+    font-size: 1.75rem !important; /* 28px */
+    line-height: 2rem !important;
+  }
+
+  .text-5xl {
+    font-size: 2rem !important; /* 32px */
+    line-height: 2.25rem !important;
+  }
+
+  .text-6xl {
+    font-size: 2.25rem !important; /* 36px */
+    line-height: 2.5rem !important;
+  }
+
+  .text-7xl {
+    font-size: 2.5rem !important; /* 40px */
+    line-height: 2.75rem !important;
+  }
+
+  /* Headings */
+  .text-3xl {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 2rem !important;
+  }
+
+  .text-2xl {
+    font-size: 1.25rem !important; /* 20px */
+    line-height: 1.75rem !important;
+  }
+
+  .text-xl {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.625rem !important;
+  }
+
+  /* Body Text */
+  .text-lg {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.5rem !important;
+  }
+
+  .text-base {
+    font-size: 0.9375rem !important; /* 15px */
+    line-height: 1.5rem !important;
+  }
+
+  .text-sm {
+    font-size: 0.875rem !important; /* 14px */
+    line-height: 1.25rem !important;
+  }
+
+  .text-xs {
+    font-size: 0.75rem !important; /* 12px */
+    line-height: 1rem !important;
+  }
+
+  /* Padding Adjustments */
+  .py-24 {
+    padding-top: 3rem !important; /* 48px */
+    padding-bottom: 3rem !important;
+  }
+
+  .py-20 {
+    padding-top: 2.5rem !important; /* 40px */
+    padding-bottom: 2.5rem !important;
+  }
+
+  .p-12,
+  .py-12,
+  .px-12 {
+    padding: 1.5rem !important; /* 24px */
+  }
+
+  .p-10 {
+    padding: 1.25rem !important; /* 20px */
+  }
+
+  .p-8 {
+    padding: 1rem !important; /* 16px */
+  }
+
+  /* Margin Adjustments */
+  .mb-16 {
+    margin-bottom: 2.5rem !important; /* 40px */
+  }
+
+  .mb-12 {
+    margin-bottom: 2rem !important; /* 32px */
+  }
+
+  .mb-8 {
+    margin-bottom: 1.5rem !important; /* 24px */
+  }
+
+  /* Button Sizes */
+  button,
+  .btn {
+    font-size: 0.9375rem !important; /* 15px */
+    padding: 0.625rem 1.25rem !important; /* 10px 20px */
+  }
+
+  /* Stats Numbers */
+  .text-4xl.font-bold,
+  .text-5xl.font-bold {
+    font-size: 2rem !important; /* 32px */
+  }
+
+  /* Card Titles */
+  h3.text-3xl {
+    font-size: 1.375rem !important; /* 22px */
+  }
+
+  h3.text-2xl {
+    font-size: 1.25rem !important; /* 20px */
+  }
+
+  h3.text-xl {
+    font-size: 1.125rem !important; /* 18px */
+  }
+}
+
+/* Medium Mobile Devices (481px - 640px) */
+@media (min-width: 481px) and (max-width: 640px) {
+  /* Hero Section */
+  .text-7xl {
+    font-size: 2.75rem !important; /* 44px */
+    line-height: 3rem !important;
+  }
+
+  .text-6xl {
+    font-size: 2.5rem !important; /* 40px */
+    line-height: 2.75rem !important;
+  }
+
+  .text-5xl {
+    font-size: 2.25rem !important; /* 36px */
+    line-height: 2.5rem !important;
+  }
+
+  .text-4xl {
+    font-size: 2rem !important; /* 32px */
+    line-height: 2.25rem !important;
+  }
+
+  /* Headings */
+  .text-3xl {
+    font-size: 1.75rem !important; /* 28px */
+    line-height: 2.25rem !important;
+  }
+
+  .text-2xl {
+    font-size: 1.375rem !important; /* 22px */
+    line-height: 1.875rem !important;
+  }
+
+  .text-xl {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.75rem !important;
+  }
+
+  /* Body Text */
+  .text-lg {
+    font-size: 1.0625rem !important; /* 17px */
+    line-height: 1.625rem !important;
+  }
+
+  .text-base {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.5rem !important;
+  }
+
+  /* Padding Adjustments */
+  .py-24 {
+    padding-top: 3.5rem !important; /* 56px */
+    padding-bottom: 3.5rem !important;
+  }
+
+  .py-20 {
+    padding-top: 3rem !important; /* 48px */
+    padding-bottom: 3rem !important;
+  }
+
+  .p-12 {
+    padding: 2rem !important; /* 32px */
+  }
+
+  .p-10 {
+    padding: 1.5rem !important; /* 24px */
+  }
+
+  /* Margin Adjustments */
+  .mb-16 {
+    margin-bottom: 3rem !important; /* 48px */
+  }
+
+  .mb-12 {
+    margin-bottom: 2.5rem !important; /* 40px */
+  }
+}
+
+/* Tablet Portrait (641px - 768px) */
+@media (min-width: 641px) and (max-width: 768px) {
+  .text-7xl {
+    font-size: 3rem !important; /* 48px */
+    line-height: 3.25rem !important;
+  }
+
+  .text-6xl {
+    font-size: 2.75rem !important; /* 44px */
+    line-height: 3rem !important;
+  }
+
+  .text-5xl {
+    font-size: 2.5rem !important; /* 40px */
+    line-height: 2.75rem !important;
+  }
+
+  .text-4xl {
+    font-size: 2.25rem !important; /* 36px */
+    line-height: 2.5rem !important;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem !important; /* 30px */
+    line-height: 2.25rem !important;
+  }
+
+  .py-24 {
+    padding-top: 4rem !important; /* 64px */
+    padding-bottom: 4rem !important;
+  }
+
+  .py-20 {
+    padding-top: 3.5rem !important; /* 56px */
+    padding-bottom: 3.5rem !important;
+  }
+}
+
+/* ============================================
+   SPECIFIC COMPONENT OVERRIDES FOR MOBILE
+   ============================================ */
+
+@media (max-width: 640px) {
+  /* Hero Section Specific */
+  .hero-title {
+    font-size: 2rem !important;
+    line-height: 2.25rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  /* Welcome Section */
+  .welcome-title {
+    font-size: 2rem !important;
+    line-height: 2.25rem !important;
+  }
+
+  .welcome-description {
+    font-size: 1rem !important;
+    line-height: 1.625rem !important;
+  }
+
+  /* Core Values Cards */
+  .value-card h3 {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.5rem !important;
+  }
+
+  .value-card p {
+    font-size: 0.9375rem !important; /* 15px */
+    line-height: 1.5rem !important;
+  }
+
+  /* Thematic Areas */
+  .thematic-title {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 2rem !important;
+  }
+
+  .thematic-description {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.625rem !important;
+  }
+
+  /* Programs/Objectives Cards */
+  .program-number {
+    font-size: 2.5rem !important; /* 40px */
+  }
+
+  .program-title {
+    font-size: 1.125rem !important; /* 18px */
+    line-height: 1.5rem !important;
+  }
+
+  .program-description {
+    font-size: 0.9375rem !important; /* 15px */
+    line-height: 1.5rem !important;
+  }
+
+  /* Footer */
+  .footer-heading {
+    font-size: 1.25rem !important; /* 20px */
+    line-height: 1.75rem !important;
+  }
+
+  .footer-text {
+    font-size: 0.9375rem !important; /* 15px */
+    line-height: 1.5rem !important;
+  }
+
+  /* Impact Stories */
+  .story-name {
+    font-size: 1.75rem !important; /* 28px */
+    line-height: 2rem !important;
+  }
+
+  .story-quote {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.625rem !important;
+  }
+
+  .stat-number {
+    font-size: 2.25rem !important; /* 36px */
+  }
+
+  .stat-label {
+    font-size: 0.9375rem !important; /* 15px */
+  }
+
+  /* Testimonial Cards */
+  .testimonial-text {
+    font-size: 0.9375rem !important; /* 15px */
+    line-height: 1.5rem !important;
+  }
+
+  .testimonial-author {
+    font-size: 1rem !important; /* 16px */
+  }
+
+  .testimonial-role {
+    font-size: 0.875rem !important; /* 14px */
+  }
+
+  /* Navigation */
+  .nav-link {
+    font-size: 0.9375rem !important; /* 15px */
+  }
+
+  /* Badges */
+  .badge {
+    font-size: 0.75rem !important; /* 12px */
+    padding: 0.375rem 0.75rem !important; /* 6px 12px */
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES FOR COMMON PATTERNS
+   ============================================ */
+
+/* Mobile-optimized heading classes */
+@media (max-width: 640px) {
+  .mobile-h1 {
+    font-size: 2rem !important;
+    line-height: 2.25rem !important;
+    font-weight: 700;
+  }
+
+  .mobile-h2 {
+    font-size: 1.75rem !important;
+    line-height: 2rem !important;
+    font-weight: 700;
+  }
+
+  .mobile-h3 {
+    font-size: 1.375rem !important;
+    line-height: 1.875rem !important;
+    font-weight: 600;
+  }
+
+  .mobile-h4 {
+    font-size: 1.125rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 600;
+  }
+
+  .mobile-body {
+    font-size: 0.9375rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .mobile-small {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+  }
+}
+
+/* ============================================
+   CONTAINER MAX-WIDTH ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 640px) {
+  .container,
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-5xl {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* ============================================
+   RESPONSIVE IMAGES & ICONS
+   ============================================ */
+
+@media (max-width: 640px) {
+  /* Scale down icon sizes */
+  .lucide {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+
+  /* Large icons in cards */
+  .w-16.h-16 {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+
+  .w-12.h-12 {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+
+  .w-20.h-20 {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+}
+
+/* ============================================
+   BUTTON RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 640px) {
+  button,
+  .btn,
+  a.btn {
+    font-size: 0.9375rem !important;
+    padding: 0.625rem 1.5rem !important;
+    border-radius: 9999px;
+  }
+
+  /* Large CTA buttons */
+  button.text-lg,
+  .btn.text-lg {
+    font-size: 1rem !important;
+    padding: 0.75rem 1.75rem !important;
+  }
+}
+
+/* ============================================
+   GRID ADJUSTMENTS FOR MOBILE
+   ============================================ */
+
+@media (max-width: 640px) {
+  /* Force single column on mobile */
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4,
+  .sm\:grid-cols-2,
+  .md\:grid-cols-2,
+  .md\:grid-cols-3,
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  /* Reduce gap */
+  .gap-8 {
+    gap: 1rem !important;
+  }
+
+  .gap-12 {
+    gap: 1.5rem !important;
+  }
 }

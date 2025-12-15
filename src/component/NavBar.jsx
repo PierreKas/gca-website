@@ -97,7 +97,7 @@ const NavBar = () => {
             {/* Logo */}
             <div
               onClick={(e) => handleSmoothScroll(e, "/")}
-              className="flex items-center flex-shrink-0 cursor-pointer group"
+              className="flex items-center shrink-0 cursor-pointer group"
             >
               {/* <img
                 className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
@@ -119,7 +119,7 @@ const NavBar = () => {
                     <span className="relative text-gray-700 hover:text-[#6B8E4E] transition-colors duration-300 font-medium py-2 px-1 cursor-pointer">
                       {item.label}
                       <span className="ml-1 text-xs">▼</span>
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] group-hover:w-full transition-all duration-300"></span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] group-hover:w-full transition-all duration-300"></span>
                     </span>
                     <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-200">
                       {item.children.map((child, childIndex) => (
@@ -141,7 +141,7 @@ const NavBar = () => {
                       className="relative text-gray-700 hover:text-[#6B8E4E] transition-colors duration-300 font-medium py-2 px-1 group cursor-pointer"
                     >
                       {item.label}
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] group-hover:w-full transition-all duration-300"></span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                 )
@@ -152,7 +152,7 @@ const NavBar = () => {
             <div className="hidden lg:block">
               <button
                 onClick={(e) => handleNavClick(e, "/get-involved")}
-                className="bg-gradient-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="bg-linear-to-r from-[#607838] to-[#F4A82D] text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 Donate Now
               </button>
@@ -184,7 +184,7 @@ const NavBar = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.2 }}
-                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[998]"
+                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-998"
                     onClick={toggleDrawer}
                   />
 
@@ -198,7 +198,7 @@ const NavBar = () => {
                       ease: "easeOut",
                       type: "tween",
                     }}
-                    className="fixed right-0 top-0 bottom-0 h-full w-80 bg-white shadow-2xl z-[999] overflow-y-auto"
+                    className="fixed right-0 top-0 bottom-0 h-full w-80 bg-white shadow-2xl z-999 overflow-y-auto"
                   >
                     <div className="p-6 h-full flex flex-col">
                       {/* Mobile Header */}
@@ -264,7 +264,7 @@ const NavBar = () => {
                       <div className="mt-auto pt-6 border-t border-gray-100">
                         <button
                           onClick={(e) => handleNavClick(e, "/get-involved")}
-                          className="w-full bg-gradient-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+                          className="w-full bg-linear-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
                         >
                           Donate Now
                         </button>
