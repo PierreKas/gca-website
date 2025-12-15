@@ -119,7 +119,7 @@ const NavBar = () => {
                     <span className="relative text-gray-700 hover:text-[#6B8E4E] transition-colors duration-300 font-medium py-2 px-1 cursor-pointer">
                       {item.label}
                       <span className="ml-1 text-xs">▼</span>
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] group-hover:w-full transition-all duration-300"></span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#607838] to-[#F4A82D]] group-hover:w-full transition-all duration-300"></span>
                     </span>
                     <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-200">
                       {item.children.map((child, childIndex) => (
@@ -141,7 +141,7 @@ const NavBar = () => {
                       className="relative text-gray-700 hover:text-[#6B8E4E] transition-colors duration-300 font-medium py-2 px-1 group cursor-pointer"
                     >
                       {item.label}
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] group-hover:w-full transition-all duration-300"></span>
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#607838] to-[#F4A82D] group-hover:w-full transition-all duration-300"></span>
                     </a>
                   </li>
                 )
@@ -264,7 +264,7 @@ const NavBar = () => {
                       <div className="mt-auto pt-6 border-t border-gray-100">
                         <button
                           onClick={(e) => handleNavClick(e, "/get-involved")}
-                          className="w-full bg-linear-to-r from-[#F9A825] via-[#B8534A] to-[#5AB4AC] text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
+                          className="w-full bg-linear-to-r from-[#607838] to-[#F4A82D] text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
                         >
                           Donate Now
                         </button>
