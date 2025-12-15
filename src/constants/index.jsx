@@ -11,16 +11,25 @@ import {
   Home,
 } from "lucide-react";
 
-import img1 from "../assets/img1.jpeg";
-import img2 from "../assets/img2.jpeg";
-import img3 from "../assets/img3.png";
-import img4 from "../assets/img01.jpeg";
-import img5 from "../assets/img02.jpeg";
-import img6 from "../assets/img03.jpeg";
-import img7 from "../assets/img04.jpeg";
-import img8 from "../assets/img05.jpeg";
-import img9 from "../assets/img42.jpeg";
-import img10 from "../assets/img41.jpeg";
+import img1 from "../assets/thematic-area/them-area-img1.jpeg";
+import img2 from "../assets/thematic-area/them-area-img2.jpeg";
+import img3 from "../assets/thematic-area/them-area-img3.jpeg";
+import img4 from "../assets/thematic-area/them-area-img4.jpeg";
+import img5 from "../assets/thematic-area/them-area-img5.jpeg";
+import img6 from "../assets/thematic-area/them-area-img6.jpeg";
+import img7 from "../assets/thematic-area/them-area-img7.jpeg";
+import img8 from "../assets/thematic-area/them-area-img8.jpeg";
+import img9 from "../assets/thematic-area/them-area-img9.jpeg";
+import img10 from "../assets/thematic-area/them-area-img10.jpeg";
+import img11 from "../assets/thematic-area/them-area-img11.jpeg";
+import img12 from "../assets/thematic-area/thematic1.jpeg";
+import img13 from "../assets/thematic-area/thematic2.jpeg";
+import img14 from "../assets/thematic-area/thematic3.jpeg";
+import img15 from "../assets/thematic-area/thematic4.jpeg";
+import img16 from "../assets/thematic-area/thematic5.jpeg";
+import img17 from "../assets/thematic-area/thematic6.jpeg";
+import img18 from "../assets/thematic-area/thematic7.jpeg";
+import img19 from "../assets/thematic-area/thematic8.JPG";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -83,7 +92,7 @@ export const thematicAreas = [
     title: "Economic Empowerment",
     description:
       "Support communities and households to improve their socioeconomic status using three main strategies that will protect and grow their asset base.",
-    images: [img1, img2, img3],
+    images: [img2, img5, img13],
     details: [
       "Increasing household financial resources",
       "Increasing socioeconomic skill base",
@@ -97,7 +106,7 @@ export const thematicAreas = [
     title: "Community Health",
     description:
       "Ensure increased access to comprehensive, quality, and equitable health services to the most vulnerable through community outreaches and health camps.",
-    images: [img4, img5, img6],
+    images: [img6, img7, img8],
     details: [
       "Maternal and Child Health",
       "Antenatal Care and Post-Natal services",
@@ -114,7 +123,7 @@ export const thematicAreas = [
     title: "Education",
     description:
       "Harnessing the creative power of youth, empowering them with skills and competences that are crucial for a flourishing world.",
-    images: [img7, img8, img9],
+    images: [img13, img14, img11],
     details: [
       "Broadening soft skills and vocational skilling",
       "Fostering systems thinking",
@@ -128,7 +137,7 @@ export const thematicAreas = [
     title: "Sports for Children",
     description:
       "Reaching out to children in underserved communities with high rates of child labour, child abuse, child neglect, and exploitation.",
-    images: [img10, img1, img2],
+    images: [img15, img19, img16],
     details: [
       "Rescue children from vulnerable situations",
       "Provide temporary care and protection through sports",
@@ -142,7 +151,7 @@ export const thematicAreas = [
     title: "Social Engagement - Child Protection",
     description:
       "Strengthen social safety nets protecting children and youth from abuse and exploitation.",
-    images: [img3, img4, img5],
+    images: [img1, img3, img10],
     details: [
       "Peace Clubs Student Empowerment Project",
       "Promoting peace in primary and secondary schools",

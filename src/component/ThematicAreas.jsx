@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { thematicAreas } from "../constants";
 import { Activity } from "lucide-react";
 
 const ThematicAreas = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState({});
+  useEffect(() => {
+    const initialIndex = {};
+    thematicAreas.forEach((_, index) => {
+      initialIndex[index] = 0;
+    });
+    setCurrentImageIndex(initialIndex);
+  }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => {
+        const newIndex = { ...prev };
+        thematicAreas.forEach((area, index) => {
+          if (area.images && area.images.length > 0) {
+            newIndex[index] = ((prev[index] || 0) + 1) % area.images.length;
+          }
+        });
+        return newIndex;
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-32 bg-linear-to-b from-gray-50 to-transparent"></div>
@@ -64,7 +87,31 @@ const ThematicAreas = () => {
                   <div className="absolute inset-0 bg-linear-to-br from-[#607838] to-[#F4A82D] rounded-3xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
                   <div className="relative bg-white p-4 rounded-3xl shadow-xl">
                     <div className="aspect-video bg-linear-to-br from-gray-200 to-gray-300 rounded-2xl flex items-center justify-center text-gray-500">
-                      <Activity size={64} />
+                      {/* <Activity size={64} /> */}
+                      <img
+                        src={
+                          area.images && area.images.length > 0
+                            ? area.images[currentImageIndex[index] || 0]
+                            : area.images?.[0] || ""
+                        }
+                        alt=""
+                        // className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
+                        className="w-full h-full object-contain group-hover:scale-110 transition-all duration-1000"
+                      />
+                      {area.images && area.images.length > 1 && (
+                        <div className="absolute bottom-4 right-4 flex gap-1">
+                          {area.images.map((_, imgIndex) => (
+                            <div
+                              key={imgIndex}
+                              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                                imgIndex === (currentImageIndex[index] || 0)
+                                  ? "bg-yellow-400"
+                                  : "bg-white/50"
+                              }`}
+                            />
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
