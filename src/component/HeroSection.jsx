@@ -79,14 +79,14 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="flex flex-col items-center gap-2 animate-bounce">
           <span className="text-white/80 text-sm">Scroll to explore</span>
           <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Subtle accent glow - single color */}
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-[#F9A825]/10 rounded-full blur-3xl"></div>
