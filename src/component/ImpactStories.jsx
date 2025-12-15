@@ -1,13 +1,6 @@
-// import React from "react";
-
-// const ImpactStories = () => {
-//   return <div>ImpactStories</div>;
-// };
-
-// export default ImpactStories;
 import React, { useState } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
-
+import testmonyVideo from "../assets/testimony/testimony-video2.mp4";
 const ImpactStories = () => {
   const [currentStory, setCurrentStory] = useState(0);
 
@@ -84,26 +77,30 @@ const ImpactStories = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-linear-to-b from-gray-50 to-white relative overflow-hidden">
+      {/* Background Decorations */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#F4A82D]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#607838]/5 rounded-full blur-3xl"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 bg-[#607838]/10 text-[#607838] rounded-full text-sm font-semibold mb-4">
             Real Stories, Real Impact
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#607838] mb-6">
             Lives We've Transformed
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Every child has a story. Here are just a few of the lives we've
             touched through our programs
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-blue-500 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-linear-to-r from-[#607838] to-[#F4A82D] mx-auto mt-6"></div>
         </div>
 
         {/* Featured Story Carousel */}
         <div className="mb-20 relative">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-100">
             <div className="grid lg:grid-cols-2">
               {/* Image Side */}
               <div className="relative h-96 lg:h-auto">
@@ -112,11 +109,11 @@ const ImpactStories = () => {
                   alt={stories[currentStory].name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-[#607838]/80 to-transparent"></div>
 
                 {/* Overlay Info */}
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <div className="inline-block bg-green-500 px-4 py-2 rounded-full text-sm font-semibold mb-2">
+                  <div className="inline-block bg-[#F4A82D] px-4 py-2 rounded-full text-sm font-semibold mb-2">
                     {stories[currentStory].impact}
                   </div>
                   <h3 className="text-3xl font-bold mb-1">
@@ -131,7 +128,7 @@ const ImpactStories = () => {
 
               {/* Content Side */}
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <Quote className="w-12 h-12 text-green-500 mb-6" />
+                <Quote className="w-12 h-12 text-[#F4A82D] mb-6" />
                 <p className="text-xl text-gray-700 leading-relaxed mb-8 italic">
                   "{stories[currentStory].story}"
                 </p>
@@ -145,8 +142,8 @@ const ImpactStories = () => {
                         onClick={() => setCurrentStory(index)}
                         className={`h-2 rounded-full transition-all duration-300 ${
                           currentStory === index
-                            ? "w-8 bg-green-500"
-                            : "w-2 bg-gray-300 hover:bg-gray-400"
+                            ? "w-8 bg-[#F4A82D]"
+                            : "w-2 bg-gray-300 hover:bg-[#607838]"
                         }`}
                       />
                     ))}
@@ -155,13 +152,13 @@ const ImpactStories = () => {
                   <div className="flex gap-2">
                     <button
                       onClick={prevStory}
-                      className="w-10 h-10 bg-gray-100 hover:bg-green-500 hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
+                      className="w-10 h-10 bg-gray-100 hover:bg-[#607838] hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
                     >
                       <ChevronLeft className="w-5 h-5" />
                     </button>
                     <button
                       onClick={nextStory}
-                      className="w-10 h-10 bg-gray-100 hover:bg-green-500 hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
+                      className="w-10 h-10 bg-gray-100 hover:bg-[#607838] hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
                     >
                       <ChevronRight className="w-5 h-5" />
                     </button>
@@ -173,55 +170,53 @@ const ImpactStories = () => {
         </div>
 
         {/* Impact Statistics */}
-        <div className="grid md:grid-cols-4 gap-6 mb-20">
-          <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="text-5xl font-bold mb-2">500+</div>
+        {/* <div className="grid md:grid-cols-4 gap-6 mb-20">
+          <div className="bg-linear-to-br from-[#607838] to-[#4a5e2d] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div className="text-5xl font-bold mb-2">1000+</div>
             <div className="text-lg opacity-90">Children Rescued</div>
           </div>
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-linear-to-br from-[#F4A82D] to-[#e09619] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <div className="text-5xl font-bold mb-2">85%</div>
             <div className="text-lg opacity-90">Back in School</div>
           </div>
-          <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-linear-to-br from-[#607838] to-[#4a5e2d] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <div className="text-5xl font-bold mb-2">1000+</div>
             <div className="text-lg opacity-90">Families Supported</div>
           </div>
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="bg-linear-to-br from-[#F4A82D] to-[#e09619] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
             <div className="text-5xl font-bold mb-2">50+</div>
             <div className="text-lg opacity-90">Communities Reached</div>
           </div>
-        </div>
+        </div> */}
 
         {/* Testimonials Grid */}
-        <div className="mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            What Community Leaders Say
+        {/* <div className="mb-12">
+          <h3 className="text-3xl font-bold text-[#607838] text-center mb-12">
+            What Children & Community Leaders Say
           </h3>
 
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-[#F4A82D]"
               >
-                {/* Stars */}
+               
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
                       key={i}
-                      className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                      className="w-5 h-5 fill-[#F4A82D] text-[#F4A82D]"
                     />
                   ))}
                 </div>
 
-                {/* Quote */}
                 <p className="text-gray-700 leading-relaxed mb-6 italic">
                   "{testimonial.text}"
                 </p>
 
-                {/* Author */}
-                <div className="border-t pt-4">
-                  <div className="font-bold text-gray-900">
+                <div className="border-t border-gray-200 pt-4">
+                  <div className="font-bold text-[#607838]">
                     {testimonial.name}
                   </div>
                   <div className="text-sm text-gray-600">
@@ -231,39 +226,39 @@ const ImpactStories = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Video Testimonial */}
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-8 md:p-12">
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-8">
+        <div className="bg-linear-to-r from-[#607838]/10 to-[#F4A82D]/10 rounded-3xl p-8 md:p-12 border-2 border-[#607838]/10">
+          <h3 className="text-3xl font-bold text-[#607838] text-center mb-8">
             Watch Their Journey
           </h3>
           <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
             <video
               controls
-              poster="https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?w=1200&q=80"
+              // poster="https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?w=1200&q=80"
               className="w-full aspect-video"
             >
-              <source
-                src="https://cdn.pixabay.com/video/2022/08/17/128344-741937788_large.mp4"
-                type="video/mp4"
-              />
+              <source src={testmonyVideo} type="video/mp4" />
             </video>
           </div>
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl p-8 md:p-12 text-white">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Help Us Write More Success Stories
-          </h3>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Every contribution brings hope and transforms lives. Be part of
-            someone's success story today.
-          </p>
-          <button className="bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl hover:scale-105">
-            Make a Difference Today
-          </button>
+        <div className="mt-16 text-center bg-linear-to-r from-[#607838] to-[#4a5e2d] rounded-2xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#F4A82D]/10 rounded-full blur-3xl"></div>
+          <div className="relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Help Us Write More Success Stories
+            </h3>
+            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+              Every contribution brings hope and transforms lives. Be part of
+              someone's success story today.
+            </p>
+            <button className="bg-[#F4A82D] hover:bg-[#F4A82D]/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+              Make a Difference Today
+            </button>
+          </div>
         </div>
       </div>
     </section>

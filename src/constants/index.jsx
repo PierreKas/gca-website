@@ -11,10 +11,16 @@ import {
   Home,
 } from "lucide-react";
 
-// Import your images here (example structure)
-// import heroImage from "../assets/images/hero.jpg";
-// import program1 from "../assets/programs/program1.jpg";
-// etc...
+import img1 from "../assets/img1.jpeg";
+import img2 from "../assets/img2.jpeg";
+import img3 from "../assets/img3.png";
+import img4 from "../assets/img01.jpeg";
+import img5 from "../assets/img02.jpeg";
+import img6 from "../assets/img03.jpeg";
+import img7 from "../assets/img04.jpeg";
+import img8 from "../assets/img05.jpeg";
+import img9 from "../assets/img42.jpeg";
+import img10 from "../assets/img41.jpeg";
 
 export const navItems = [
   { label: "Home", href: "/" },
@@ -77,7 +83,7 @@ export const thematicAreas = [
     title: "Economic Empowerment",
     description:
       "Support communities and households to improve their socioeconomic status using three main strategies that will protect and grow their asset base.",
-    // images: [economicImg1, economicImg2, economicImg3],
+    images: [img1, img2, img3],
     details: [
       "Increasing household financial resources",
       "Increasing socioeconomic skill base",
@@ -91,7 +97,7 @@ export const thematicAreas = [
     title: "Community Health",
     description:
       "Ensure increased access to comprehensive, quality, and equitable health services to the most vulnerable through community outreaches and health camps.",
-    // images: [healthImg1, healthImg2, healthImg3],
+    images: [img4, img5, img6],
     details: [
       "Maternal and Child Health",
       "Antenatal Care and Post-Natal services",
@@ -108,7 +114,7 @@ export const thematicAreas = [
     title: "Education",
     description:
       "Harnessing the creative power of youth, empowering them with skills and competences that are crucial for a flourishing world.",
-    // images: [educationImg1, educationImg2, educationImg3],
+    images: [img7, img8, img9],
     details: [
       "Broadening soft skills and vocational skilling",
       "Fostering systems thinking",
@@ -122,7 +128,7 @@ export const thematicAreas = [
     title: "Sports for Children",
     description:
       "Reaching out to children in underserved communities with high rates of child labour, child abuse, child neglect, and exploitation.",
-    // images: [sportsImg1, sportsImg2, sportsImg3],
+    images: [img10, img1, img2],
     details: [
       "Rescue children from vulnerable situations",
       "Provide temporary care and protection through sports",
@@ -136,7 +142,7 @@ export const thematicAreas = [
     title: "Social Engagement - Child Protection",
     description:
       "Strengthen social safety nets protecting children and youth from abuse and exploitation.",
-    // images: [protectionImg1, protectionImg2, protectionImg3],
+    images: [img3, img4, img5],
     details: [
       "Peace Clubs Student Empowerment Project",
       "Promoting peace in primary and secondary schools",
