@@ -63,11 +63,11 @@ const HeroSection = () => {
               <div className="text-gray-300 mt-1">Children Reached</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-white">50+</div>
+              <div className="text-4xl font-bold text-white">5+</div>
               <div className="text-gray-300 mt-1">Communities Served</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-white">20+</div>
+              <div className="text-4xl font-bold text-white">11+</div>
               <div className="text-gray-300 mt-1">Partner Organizations</div>
             </div>
             <div className="text-center">

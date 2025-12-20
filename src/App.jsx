@@ -66,6 +66,8 @@ import ThematicAreas from "./component/ThematicAreas";
 import Programs from "./component/Programs";
 import ImpactStories from "./component/ImpactStories";
 import Foooter from "./component/Foooter";
+import ContactAndLocation from "./component/Contact";
+import PartnersScroll from "./constants/PartnersScroll";
 
 const App = () => {
   return (
@@ -84,6 +86,7 @@ const App = () => {
                 <WelcomeSection />
                 <WhyGCA />
                 <ImpactStories />
+                <PartnersScroll />
               </>
             }
           />
@@ -94,6 +97,7 @@ const App = () => {
           <Route path="/values" element={<CoreValues />} />
           <Route path="/thematic-areas" element={<ThematicAreas />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/contact" element={<ContactAndLocation />} />
         </Routes>
       </div>
 

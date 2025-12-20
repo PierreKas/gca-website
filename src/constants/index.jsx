@@ -44,7 +44,7 @@ export const navItems = [
   },
   { label: "Thematic Areas", href: "/thematic-areas" },
   { label: "Programs", href: "/programs" },
-  { label: "Get Involved", href: "/get-involved" },
+  // { label: "Get Involved", href: "/get-involved" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -162,6 +162,80 @@ export const thematicAreas = [
   },
 ];
 
+// export const objectives = [
+//   {
+//     number: "01",
+//     title: "Street Children Rehabilitation",
+//     description:
+//       "To withdraw, rehabilitate and reintegrate children living on the street and other vulnerable situations in Eastern Central Regional.",
+//   },
+//   {
+//     number: "02",
+//     title: "Quality Health Services",
+//     description:
+//       "To ensure increased access to comprehensive, quality, and equitable health services to the most vulnerable communities.",
+//   },
+//   {
+//     number: "03",
+//     title: "Education Support",
+//     description:
+//       "To support the education of ex-street children and other vulnerable children.",
+//   },
+//   {
+//     number: "04",
+//     title: "Youth Livelihoods",
+//     description:
+//       "To improve the livelihoods of youths and vulnerable families to prevent street migrations in Eastern Central.",
+//   },
+//   {
+//     number: "05",
+//     title: "HIV/AIDS Awareness",
+//     description:
+//       "Raising awareness of HIV, treatment, care, and support to persons living with HIV/AIDS.",
+//   },
+//   {
+//     number: "06",
+//     title: "Community Support",
+//     description:
+//       "Supporting the most at risk communities, empowering grandmothers, and their orphaned grandchildren.",
+//   },
+//   {
+//     number: "07",
+//     title: "Child Abuse Prevention",
+//     description:
+//       "To undertake actions to prevent and respond to child abuse, violence, and exploitation.",
+//   },
+//   {
+//     number: "08",
+//     title: "Gender Equality",
+//     description:
+//       "To enhance partnerships, networks and movements among young women, young men, adolescent girls and boys, working on gender equality.",
+//   },
+//   {
+//     number: "09",
+//     title: "Girls Empowerment",
+//     description:
+//       "To inspire, empower, transform and develop communities in which girls stay both social and community.",
+//   },
+//   {
+//     number: "10",
+//     title: "Skills Development",
+//     description:
+//       "To empower young generation with relevant knowledge and skills.",
+//   },
+//   {
+//     number: "11",
+//     title: "Menstrual Hygiene",
+//     description:
+//       "To provide quick access to information related to menstrual hygiene and sanitary materials to girls and young women.",
+//   },
+//   {
+//     number: "12",
+//     title: "Agriculture & Food Security",
+//     description:
+//       "Empower Communities for improved Agriculture and food security through agriculture inputs for farmers.",
+//   },
+// ];
 export const objectives = [
   {
     number: "01",
@@ -183,9 +257,9 @@ export const objectives = [
   },
   {
     number: "04",
-    title: "Youth Livelihoods",
+    title: "Community Empowerment",
     description:
-      "To improve the livelihoods of youths and vulnerable families to prevent street migrations in Eastern Central.",
+      "To improve livelihoods of youths and vulnerable families, support at-risk communities, empower the young generation with relevant knowledge and skills, and enhance agriculture and food security through farmer support and agricultural inputs.",
   },
   {
     number: "05",
@@ -195,45 +269,27 @@ export const objectives = [
   },
   {
     number: "06",
-    title: "Community Support",
-    description:
-      "Supporting the most at risk communities, empowering grandmothers, and their orphaned grandchildren.",
-  },
-  {
-    number: "07",
     title: "Child Abuse Prevention",
     description:
       "To undertake actions to prevent and respond to child abuse, violence, and exploitation.",
   },
   {
-    number: "08",
+    number: "07",
     title: "Gender Equality",
     description:
       "To enhance partnerships, networks and movements among young women, young men, adolescent girls and boys, working on gender equality.",
   },
   {
-    number: "09",
+    number: "08",
     title: "Girls Empowerment",
     description:
       "To inspire, empower, transform and develop communities in which girls stay both social and community.",
   },
   {
-    number: "10",
-    title: "Skills Development",
-    description:
-      "To empower young generation with relevant knowledge and skills.",
-  },
-  {
-    number: "11",
+    number: "09",
     title: "Menstrual Hygiene",
     description:
       "To provide quick access to information related to menstrual hygiene and sanitary materials to girls and young women.",
-  },
-  {
-    number: "12",
-    title: "Agriculture & Food Security",
-    description:
-      "Empower Communities for improved Agriculture and food security through agriculture inputs for farmers.",
   },
 ];
 
@@ -274,14 +330,30 @@ export const organizationInfo = {
   mission:
     "To provide equitable, inclusive, and affordable quality health care, economic empowerment, and social services to the community through sports.",
   description:
-    "Game Connect Africa is a Community Based Organization (CBO) aimed at empowering Children, protect, educate, Treat and rise above adversity using the power of sports for sustainable development in the Communities of Eastern Busoga Region through transformative leadership, advocacy, sexual Reproductive health education, and skills development.",
+    "Game Connect Africa is a Community Based Organization (CBO) aimed to protect, educate and empower community to raise above diversity using the power of sport for sustainable development in the Communities of Uganda through transformative leadership, advocacy, sexual Reproductive health education, and skills development.",
   approach:
     "We work in disadvantaged rural communities, focusing on enhancing children's learning, development, and access to medical care services and education through play. We take an innovative child-centred approach to education and use the power of play to transform the lives of children through our play programmes.",
   belief:
-    "Game Connect Africa Uganda believe Children learn best through play. It's an essential part of their development. That's where we come into partner with parents, schools, health facilities, prisons, churches, and other stakeholders to make learning through play a priority for children in Busoga region - Eastern Uganda.",
+    "Game Connect Africa Uganda believe Children learn best through play. It's an essential part of their development. That's where we come into partner with parents, schools, health facilities, prisons, churches, and other stakeholders to make learning through play a priority for children in Uganda.",
 };
 
 export const partners = [
+  // {
+  //   category: "Partner Organizations",
+  //   list: [
+  //     "Uganda child right NGO Net (UCRNN)",
+  //     "Life in Abundance International",
+  //     "Arise women of valor Ministries",
+  //     "Lisel International",
+  //     "Local government",
+  //     "Sports for social change network",
+  //     "Christian Ministry Alliance USA",
+  //     "Girls not brides Uganda alliance",
+  //     "Sole HOPE Uganda",
+  //     "Cricket Uganda",
+  //     "Iganga Senior Secondary School",
+  //   ],
+  // },
   {
     category: "Community Partners",
     list: ["Parents", "Schools", "Health Facilities", "Prisons", "Churches"],

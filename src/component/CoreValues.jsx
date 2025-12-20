@@ -76,6 +76,7 @@ import { motion } from "framer-motion";
 //     </section>
 //   );
 // };
+
 const CoreValues = () => {
   return (
     <section className="py-24 bg-linear-to-b from-white to-gray-50 relative overflow-hidden">

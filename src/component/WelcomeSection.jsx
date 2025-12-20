@@ -45,10 +45,10 @@ const WelcomeSection = () => {
           {[
             { number: "1000+", label: "Children Reached" },
             { number: "5", label: "Communities" },
-            { number: "12+", label: "Partners Churches" },
-            { number: "6+", label: "Partners Organizations" },
-            { number: "550+", label: "Women Empowered" },
-            { number: "19+", label: "Self Help Groups" },
+            { number: "15+", label: "Partners Churches" },
+            { number: "7+", label: "Partners Organizations" },
+            { number: "600+", label: "Women Empowered" },
+            { number: "20+", label: "Self Help Groups" },
           ].map((stat, index) => (
             <div key={index} className="bg-white p-6 rounded-2xl shadow-lg">
               <div className="text-4xl font-bold text-[#607838] mb-2">

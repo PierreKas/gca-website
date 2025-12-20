@@ -2,14 +2,15 @@ import React from "react";
 import { organizationInfo } from "../constants";
 import { motion } from "framer-motion";
 import { Activity, Heart } from "lucide-react";
+import PartnersScroll from "../constants/PartnersScroll";
 
 const VisionMission = () => {
   return (
-    <section className="py-24 bg-linear-to-br from-[#607838]/5 via-white to-[#607838]/5 relative overflow-hidden">
+    <section className="pt-24  bg-linear-to-br from-[#607838]/5 via-white to-[#607838]/5 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#F4A82D]/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#607838]/10 rounded-full blur-3xl"></div>
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-6xl pb-16 mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Vision Card */}
           <div className="group relative">
@@ -44,6 +45,7 @@ const VisionMission = () => {
           </div>
         </div>
       </div>
+      <PartnersScroll />
     </section>
   );
 };

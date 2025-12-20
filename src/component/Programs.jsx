@@ -7,14 +7,15 @@
 // export default Programs;
 import React from "react";
 import { objectives } from "../constants";
+import PartnersScroll from "../constants/PartnersScroll";
 
 const Programs = () => {
   return (
-    <section className="py-24 bg-linear-to-br from-[#607838]/5 via-white to-[#F4A82D]/5 relative overflow-hidden">
+    <section className="pt-24 bg-linear-to-br from-[#607838]/5 via-white to-[#F4A82D]/5 relative overflow-hidden">
       <div className="absolute top-20 left-10 w-72 h-72 bg-[#607838]/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-[#F4A82D]/10 rounded-full blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl pb-16 mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 bg-[#F4A82D]/10 rounded-full mb-4">
             <span className="text-[#607838] font-semibold text-sm uppercase tracking-wide">
@@ -52,6 +53,7 @@ const Programs = () => {
           ))}
         </div>
       </div>
+      <PartnersScroll />
     </section>
   );
 };
