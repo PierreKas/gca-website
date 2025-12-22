@@ -39,13 +39,13 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Link
+            {/* <Link
               to="/get-involved"
               className="group flex items-center gap-2 bg-[#F9A825] hover:bg-[#F9A825]/90 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
             >
               Get Involved
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </Link> */}
 
             <Link
               to="/about"

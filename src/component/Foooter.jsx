@@ -29,6 +29,44 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
+                href="https://web.facebook.com/people/Game-Connect-Africa/100082174097004/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#F4A82D] flex items-center justify-center transition"
+              >
+                <Facebook size={18} />
+              </a>
+
+              <a
+                href="https://x.com/GCAfricaUganda"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#F4A82D] flex items-center justify-center transition"
+              >
+                <Twitter size={18} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/gameconnectafrica?igsh=dzdud3Zoc2JucHVl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#F4A82D] flex items-center justify-center transition"
+              >
+                <Instagram size={18} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/game-connect-africa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#F4A82D] flex items-center justify-center transition"
+              >
+                <Linkedin size={18} />
+              </a>
+            </div>
+
+            {/* <div className="flex space-x-4">
+              <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#F4A82D] flex items-center justify-center transition"
               >
@@ -46,7 +84,7 @@ const Footer = () => {
               >
                 <Instagram size={18} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

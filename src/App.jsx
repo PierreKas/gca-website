@@ -68,6 +68,7 @@ import ImpactStories from "./component/ImpactStories";
 import Foooter from "./component/Foooter";
 import ContactAndLocation from "./component/Contact";
 import PartnersScroll from "./constants/PartnersScroll";
+import Team from "./component/Team";
 
 const App = () => {
   return (
@@ -86,6 +87,7 @@ const App = () => {
                 <WelcomeSection />
                 <WhyGCA />
                 <ImpactStories />
+                <Team />
                 <PartnersScroll />
               </>
             }

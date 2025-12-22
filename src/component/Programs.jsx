@@ -1,10 +1,3 @@
-// import React from "react";
-
-// const Programs = () => {
-//   return <div>Programs</div>;
-// };
-
-// export default Programs;
 import React from "react";
 import { objectives } from "../constants";
 import PartnersScroll from "../constants/PartnersScroll";

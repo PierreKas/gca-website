@@ -30,7 +30,11 @@ import img16 from "../assets/thematic-area/thematic5.jpeg";
 import img17 from "../assets/thematic-area/thematic6.jpeg";
 import img18 from "../assets/thematic-area/thematic7.jpeg";
 import img19 from "../assets/thematic-area/thematic8.JPG";
-
+import health1 from "../assets/health/health1.jpeg";
+import health2 from "../assets/health/health2.jpeg";
+import health3 from "../assets/health/health3.jpeg";
+import edu from "../assets/education/edu.jpeg";
+import profile from "../assets/profile.jpeg";
 export const navItems = [
   { label: "Home", href: "/" },
   {
@@ -92,7 +96,7 @@ export const thematicAreas = [
     title: "Economic Empowerment",
     description:
       "Support communities and households to improve their socioeconomic status using three main strategies that will protect and grow their asset base.",
-    images: [img2, img5, img13],
+    images: [img6, img7, img8], //[img2, img5, img13],
     details: [
       "Increasing household financial resources",
       "Increasing socioeconomic skill base",
@@ -106,7 +110,7 @@ export const thematicAreas = [
     title: "Community Health",
     description:
       "Ensure increased access to comprehensive, quality, and equitable health services to the most vulnerable through community outreaches and health camps.",
-    images: [img6, img7, img8],
+    images: [health1, health2, health3],
     details: [
       "Maternal and Child Health",
       "Antenatal Care and Post-Natal services",
@@ -123,7 +127,7 @@ export const thematicAreas = [
     title: "Education",
     description:
       "Harnessing the creative power of youth, empowering them with skills and competences that are crucial for a flourishing world.",
-    images: [img13, img14, img11],
+    images: [img13, edu, img11],
     details: [
       "Broadening soft skills and vocational skilling",
       "Fostering systems thinking",
@@ -151,7 +155,7 @@ export const thematicAreas = [
     title: "Social Engagement - Child Protection",
     description:
       "Strengthen social safety nets protecting children and youth from abuse and exploitation.",
-    images: [img1, img3, img10],
+    images: [img1, img3, img17],
     details: [
       "Peace Clubs Student Empowerment Project",
       "Promoting peace in primary and secondary schools",
@@ -239,33 +243,33 @@ export const thematicAreas = [
 export const objectives = [
   {
     number: "01",
+    title: "Local Church capacity building",
+    description:
+      "Game connect Africa empowers local churches to serve the poor and vulnerable through sports by building community ownership.",
+  },
+  {
+    number: "02",
     title: "Street Children Rehabilitation",
     description:
       "To withdraw, rehabilitate and reintegrate children living on the street and other vulnerable situations in Eastern Central Regional.",
   },
   {
-    number: "02",
+    number: "03",
     title: "Quality Health Services",
     description:
       "To ensure increased access to comprehensive, quality, and equitable health services to the most vulnerable communities.",
   },
   {
-    number: "03",
+    number: "04",
     title: "Education Support",
     description:
       "To support the education of ex-street children and other vulnerable children.",
   },
   {
-    number: "04",
+    number: "05",
     title: "Community Empowerment",
     description:
       "To improve livelihoods of youths and vulnerable families, support at-risk communities, empower the young generation with relevant knowledge and skills, and enhance agriculture and food security through farmer support and agricultural inputs.",
-  },
-  {
-    number: "05",
-    title: "HIV/AIDS Awareness",
-    description:
-      "Raising awareness of HIV, treatment, care, and support to persons living with HIV/AIDS.",
   },
   {
     number: "06",
@@ -290,6 +294,13 @@ export const objectives = [
     title: "Menstrual Hygiene",
     description:
       "To provide quick access to information related to menstrual hygiene and sanitary materials to girls and young women.",
+  },
+
+  {
+    number: "10",
+    title: "HIV/AIDS Awareness",
+    description:
+      "Raising awareness of HIV, treatment, care, and support to persons living with HIV/AIDS.",
   },
 ];
 
@@ -326,9 +337,9 @@ export const playSkills = [
 
 export const organizationInfo = {
   vision:
-    "A healthy, socially, and economically empowered community through sports.",
+    "A healthy, socially, and economically empowered community for a better Africa through sports for all.", // "A healthy, socially, and economically empowered community through sports.",
   mission:
-    "To provide equitable, inclusive, and affordable quality health care, economic empowerment, and social services to the community through sports.",
+    "To protect, educate and empower community to raise above diversity using the power of sports.", //"To provide equitable, inclusive, and affordable quality health care, economic empowerment, and social services to the community through sports.",
   description:
     "Game Connect Africa is a Community Based Organization (CBO) aimed to protect, educate and empower community to raise above diversity using the power of sport for sustainable development in the Communities of Uganda through transformative leadership, advocacy, sexual Reproductive health education, and skills development.",
   approach:
@@ -368,5 +379,44 @@ export const partners = [
       "Teachers",
       "Health Workers",
     ],
+  },
+];
+
+export const team = [
+  {
+    user: "Samuel Kibi",
+    role: "Co-Founder",
+    image: profile,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  },
+  {
+    user: "Lydia Ntono",
+    role: "Co-Founder",
+    image: profile,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  },
+  {
+    user: "User Name",
+    role: "Team Role",
+    image: profile,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  },
+  {
+    user: "User Name",
+    role: "Team Role",
+    image: profile,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  },
+  {
+    user: "User Name",
+    role: "Team Role",
+    image: profile,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  },
+  {
+    user: "User Name",
+    role: "Team Role",
+    image: profile,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
 ];
