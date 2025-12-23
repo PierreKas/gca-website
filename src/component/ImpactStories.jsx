@@ -1,50 +1,50 @@
 import React, { useState } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import testmonyVideo from "../assets/testimony/testimony-video2.mp4";
+import olivia from "../assets/testimony/econ1.jpeg";
 const ImpactStories = () => {
   const [currentStory, setCurrentStory] = useState(0);
 
   const stories = [
     {
-      name: "Sarah Nakato",
-      age: 14,
+      name: "Namusoke Olivia",
+      age: "XX",
       story:
-        "I was living on the streets for two years. Game Connect Africa found me and brought me to their program. Now I'm back in school, I play football every day, and I have dreams of becoming a teacher. They didn't just give me shelter; they gave me hope.",
-      image:
-        "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80",
-      impact: "Back in School",
+        "I'm so grateful to GCA for empowering me economically. Before getting involved with GCA, I was ever stressed with home needs and my children were sickly and malnourished due to poor feeding.But ever since I joined GCA women groups, I'm empowered in vegetable growing which boosted my income generating activities well and facilitated my family with balanced diet and my children are now healthy.\nThanks to GCA for the work your doing among the women and families.",
+      image: olivia,
+      impact: "Economic Empowerment",
       location: "Jinja, Uganda",
     },
-    {
-      name: "David Mukasa",
-      age: 16,
-      story:
-        "Through GCA's sports program, I discovered my talent for football. They helped me join a youth team and now I'm training to be a professional player. I also help coach younger kids in my community. Sports changed my life.",
-      image:
-        "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80",
-      impact: "Future Athlete",
-      location: "Kamuli, Uganda",
-    },
-    {
-      name: "Grace Namugga",
-      age: 12,
-      story:
-        "Before GCA came to our school, I was shy and scared to speak. The Peace Club taught me about my rights and gave me confidence. Now I'm a leader in my class and I help other girls feel safe and supported.",
-      image:
-        "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80",
-      impact: "Student Leader",
-      location: "Iganga, Uganda",
-    },
-    {
-      name: "James Waiswa",
-      age: 11,
-      story:
-        "I used to miss school a lot because I was sick. GCA's health program helped me get treatment for malaria and taught my family about hygiene. Now I'm healthy, I never miss school, and I'm top of my class!",
-      image:
-        "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?w=400&q=80",
-      impact: "Healthy & Thriving",
-      location: "Mayuge, Uganda",
-    },
+    // {
+    //   name: "David Mukasa",
+    //   age: 16,
+    //   story:
+    //     "Through GCA's sports program, I discovered my talent for football. They helped me join a youth team and now I'm training to be a professional player. I also help coach younger kids in my community. Sports changed my life.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80",
+    //   impact: "Future Athlete",
+    //   location: "Kamuli, Uganda",
+    // },
+    // {
+    //   name: "Grace Namugga",
+    //   age: 12,
+    //   story:
+    //     "Before GCA came to our school, I was shy and scared to speak. The Peace Club taught me about my rights and gave me confidence. Now I'm a leader in my class and I help other girls feel safe and supported.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80",
+    //   impact: "Student Leader",
+    //   location: "Iganga, Uganda",
+    // },
+    // {
+    //   name: "James Waiswa",
+    //   age: 11,
+    //   story:
+    //     "I used to miss school a lot because I was sick. GCA's health program helped me get treatment for malaria and taught my family about hygiene. Now I'm healthy, I never miss school, and I'm top of my class!",
+    //   image:
+    //     "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?w=400&q=80",
+    //   impact: "Healthy & Thriving",
+    //   location: "Mayuge, Uganda",
+    // },
   ];
 
   const testimonials = [
@@ -92,13 +92,13 @@ const ImpactStories = () => {
             Lives We've Transformed
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Every child has a story. Here are just a few of the lives we've
-            touched through our programs
+            Everyone has a story. Here are just a few of the lives we've touched
+            through our programs.
           </p>
           <div className="w-24 h-1 bg-linear-to-r from-[#607838] to-[#F4A82D] mx-auto mt-6"></div>
         </div>
-
         {/* Featured Story Carousel */}
+
         <div className="mb-20 relative">
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-100">
             <div className="grid lg:grid-cols-2">
@@ -120,7 +120,7 @@ const ImpactStories = () => {
                     {stories[currentStory].name}
                   </h3>
                   <p className="text-sm opacity-90">
-                    Age {stories[currentStory].age} •{" "}
+                    {/* Age {stories[currentStory].age} •{" "} */}
                     {stories[currentStory].location}
                   </p>
                 </div>
@@ -152,13 +152,13 @@ const ImpactStories = () => {
                   <div className="flex gap-2">
                     <button
                       onClick={prevStory}
-                      className="w-10 h-10 bg-gray-100 hover:bg-[#607838] hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
+                      className="w-6 h-6 bg-gray-100 hover:bg-[#607838] hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
                     >
                       <ChevronLeft className="w-5 h-5" />
                     </button>
                     <button
                       onClick={nextStory}
-                      className="w-10 h-10 bg-gray-100 hover:bg-[#607838] hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
+                      className="w-6 h-6 bg-gray-100 hover:bg-[#607838] hover:text-white rounded-full flex items-center justify-center transition-colors duration-300"
                     >
                       <ChevronRight className="w-5 h-5" />
                     </button>
@@ -168,66 +168,6 @@ const ImpactStories = () => {
             </div>
           </div>
         </div>
-
-        {/* Impact Statistics */}
-        {/* <div className="grid md:grid-cols-4 gap-6 mb-20">
-          <div className="bg-linear-to-br from-[#607838] to-[#4a5e2d] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-5xl font-bold mb-2">1000+</div>
-            <div className="text-lg opacity-90">Children Rescued</div>
-          </div>
-          <div className="bg-linear-to-br from-[#F4A82D] to-[#e09619] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-5xl font-bold mb-2">85%</div>
-            <div className="text-lg opacity-90">Back in School</div>
-          </div>
-          <div className="bg-linear-to-br from-[#607838] to-[#4a5e2d] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-5xl font-bold mb-2">1000+</div>
-            <div className="text-lg opacity-90">Families Supported</div>
-          </div>
-          <div className="bg-linear-to-br from-[#F4A82D] to-[#e09619] rounded-2xl p-8 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-5xl font-bold mb-2">50+</div>
-            <div className="text-lg opacity-90">Communities Reached</div>
-          </div>
-        </div> */}
-
-        {/* Testimonials Grid */}
-        {/* <div className="mb-12">
-          <h3 className="text-3xl font-bold text-[#607838] text-center mb-12">
-            What Children & Community Leaders Say
-          </h3>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-[#F4A82D]"
-              >
-               
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 fill-[#F4A82D] text-[#F4A82D]"
-                    />
-                  ))}
-                </div>
-
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
-                  "{testimonial.text}"
-                </p>
-
-                <div className="border-t border-gray-200 pt-4">
-                  <div className="font-bold text-[#607838]">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    {testimonial.role}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
-
         {/* Video Testimonial */}
         <div className="bg-linear-to-r from-[#607838]/10 to-[#F4A82D]/10 rounded-3xl p-8 md:p-12 border-2 border-[#607838]/10">
           <h3 className="text-3xl font-bold text-[#607838] text-center mb-8">
@@ -243,7 +183,6 @@ const ImpactStories = () => {
             </video>
           </div>
         </div>
-
         {/* CTA */}
         <div className="mt-16 text-center bg-linear-to-r from-[#607838] to-[#4a5e2d] rounded-2xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#F4A82D]/10 rounded-full blur-3xl"></div>

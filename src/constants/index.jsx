@@ -35,6 +35,111 @@ import health2 from "../assets/health/health2.jpeg";
 import health3 from "../assets/health/health3.jpeg";
 import edu from "../assets/education/edu.jpeg";
 import profile from "../assets/profile.jpeg";
+import sam from "../assets/team/samuel-kibi.jpeg";
+import lydia from "../assets/team/lydia.jpeg";
+import mukiiza from "../assets/team/mukiiza.jpeg";
+import peter from "../assets/team/peter.jpeg";
+import eco1 from "../assets/testimony/econ1.jpeg";
+import eco2 from "../assets/testimony/econ2.jpeg";
+import eco3 from "../assets/testimony/econ3.jpeg";
+
+export const team = [
+  {
+    user: "Samuel Kibi",
+    role: "Co-Founder & Executive Director",
+    image: sam,
+    text: "Samuel Kibi is the Co-Founder  Executive Director of Game Connect Africa (GCA)",
+  },
+  {
+    user: "Lydia Ntono",
+    role: "Co-Founder & Sustainable development Director",
+    image: lydia,
+    text: "Lydia Ntono is a Co-Founder & Sustainable development Director of Game Connect Africa (GCA)",
+  },
+  // Board
+  {
+    user: "Kintu Daniel",
+    role: "Board chairman",
+    image: "",
+    text: "",
+  },
+  {
+    user: "Mukiiza Ivan",
+    role: "Board Treasurer",
+    image: mukiiza,
+    text: "",
+    //text: "Bachelor of Commerce - MUK\nPostgraduate Diploma in Tax and Revenue Administration\n\nIvan has 3 years of Accounting, Finance and Fund Management in NGO sector , 3 years of Tax, Accounting and Finance experience in Private Sector\nCurrently working as a Domestic Tax Officer with Uganda Revenue Authority.",
+  },
+  {
+    user: "Isumba B. Peter",
+    role: "Board member",
+    image: peter,
+    text: "",
+  },
+  {
+    user: "Rev. Diphas L Mwanga",
+    role: "Board member\nSpiritual leader",
+    image: "",
+    text: "",
+  },
+  {
+    user: "Pastor Justine Mwanga",
+    role: "Board member",
+    image: "",
+    text: "",
+  },
+  {
+    user: "Kirabo Deborah",
+    role: "Board member",
+    image: "",
+    text: "",
+  },
+  // Members
+  {
+    user: "Henry S. Mwesigwa",
+    role: "Program Director",
+    image: "",
+    text: "",
+  },
+  {
+    user: "Ambrosse Demune",
+    role: "Programs Officer",
+    image: "",
+    text: "",
+  },
+  {
+    user: "Isumba B. Peter",
+    role: "Communication Manager",
+    image: peter,
+    text: "",
+  },
+  {
+    user: "Byaruhanga Juma",
+    role: "Sports Manager",
+    image: "",
+    text: "",
+  },
+
+  {
+    user: "Acheles",
+    role: "Grants & Fundrasing Manager",
+    image: "",
+    text: "",
+  },
+  {
+    user: "Muwanguzi Andrew",
+    role: "Children Ministry",
+    image: "",
+    text: "",
+  },
+  {
+    user: "Geoffrey Isabariye",
+    role: "Head Teacher of the GCA School",
+    image: "",
+    text: "",
+  },
+];
+
 export const navItems = [
   { label: "Home", href: "/" },
   {
@@ -96,7 +201,7 @@ export const thematicAreas = [
     title: "Economic Empowerment",
     description:
       "Support communities and households to improve their socioeconomic status using three main strategies that will protect and grow their asset base.",
-    images: [img6, img7, img8], //[img2, img5, img13],
+    images: [img6, eco2, img7, eco3, img8, eco1], //[img2, img5, img13],
     details: [
       "Increasing household financial resources",
       "Increasing socioeconomic skill base",
@@ -165,81 +270,6 @@ export const thematicAreas = [
     ],
   },
 ];
-
-// export const objectives = [
-//   {
-//     number: "01",
-//     title: "Street Children Rehabilitation",
-//     description:
-//       "To withdraw, rehabilitate and reintegrate children living on the street and other vulnerable situations in Eastern Central Regional.",
-//   },
-//   {
-//     number: "02",
-//     title: "Quality Health Services",
-//     description:
-//       "To ensure increased access to comprehensive, quality, and equitable health services to the most vulnerable communities.",
-//   },
-//   {
-//     number: "03",
-//     title: "Education Support",
-//     description:
-//       "To support the education of ex-street children and other vulnerable children.",
-//   },
-//   {
-//     number: "04",
-//     title: "Youth Livelihoods",
-//     description:
-//       "To improve the livelihoods of youths and vulnerable families to prevent street migrations in Eastern Central.",
-//   },
-//   {
-//     number: "05",
-//     title: "HIV/AIDS Awareness",
-//     description:
-//       "Raising awareness of HIV, treatment, care, and support to persons living with HIV/AIDS.",
-//   },
-//   {
-//     number: "06",
-//     title: "Community Support",
-//     description:
-//       "Supporting the most at risk communities, empowering grandmothers, and their orphaned grandchildren.",
-//   },
-//   {
-//     number: "07",
-//     title: "Child Abuse Prevention",
-//     description:
-//       "To undertake actions to prevent and respond to child abuse, violence, and exploitation.",
-//   },
-//   {
-//     number: "08",
-//     title: "Gender Equality",
-//     description:
-//       "To enhance partnerships, networks and movements among young women, young men, adolescent girls and boys, working on gender equality.",
-//   },
-//   {
-//     number: "09",
-//     title: "Girls Empowerment",
-//     description:
-//       "To inspire, empower, transform and develop communities in which girls stay both social and community.",
-//   },
-//   {
-//     number: "10",
-//     title: "Skills Development",
-//     description:
-//       "To empower young generation with relevant knowledge and skills.",
-//   },
-//   {
-//     number: "11",
-//     title: "Menstrual Hygiene",
-//     description:
-//       "To provide quick access to information related to menstrual hygiene and sanitary materials to girls and young women.",
-//   },
-//   {
-//     number: "12",
-//     title: "Agriculture & Food Security",
-//     description:
-//       "Empower Communities for improved Agriculture and food security through agriculture inputs for farmers.",
-//   },
-// ];
 export const objectives = [
   {
     number: "01",
@@ -349,22 +379,6 @@ export const organizationInfo = {
 };
 
 export const partners = [
-  // {
-  //   category: "Partner Organizations",
-  //   list: [
-  //     "Uganda child right NGO Net (UCRNN)",
-  //     "Life in Abundance International",
-  //     "Arise women of valor Ministries",
-  //     "Lisel International",
-  //     "Local government",
-  //     "Sports for social change network",
-  //     "Christian Ministry Alliance USA",
-  //     "Girls not brides Uganda alliance",
-  //     "Sole HOPE Uganda",
-  //     "Cricket Uganda",
-  //     "Iganga Senior Secondary School",
-  //   ],
-  // },
   {
     category: "Community Partners",
     list: ["Parents", "Schools", "Health Facilities", "Prisons", "Churches"],
@@ -379,44 +393,5 @@ export const partners = [
       "Teachers",
       "Health Workers",
     ],
-  },
-];
-
-export const team = [
-  {
-    user: "Samuel Kibi",
-    role: "Co-Founder",
-    image: profile,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  },
-  {
-    user: "Lydia Ntono",
-    role: "Co-Founder",
-    image: profile,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  },
-  {
-    user: "User Name",
-    role: "Team Role",
-    image: profile,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  },
-  {
-    user: "User Name",
-    role: "Team Role",
-    image: profile,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  },
-  {
-    user: "User Name",
-    role: "Team Role",
-    image: profile,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  },
-  {
-    user: "User Name",
-    role: "Team Role",
-    image: profile,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
 ];
