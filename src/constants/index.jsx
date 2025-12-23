@@ -38,6 +38,7 @@ import profile from "../assets/profile.jpeg";
 import sam from "../assets/team/samuel-kibi.jpeg";
 import lydia from "../assets/team/lydia.jpeg";
 import mukiiza from "../assets/team/mukiiza.jpeg";
+import achelles from "../assets/team/achelles.jpeg";
 import peter from "../assets/team/peter.jpeg";
 import eco1 from "../assets/testimony/econ1.jpeg";
 import eco2 from "../assets/testimony/econ2.jpeg";
@@ -123,7 +124,7 @@ export const team = [
   {
     user: "Acheles",
     role: "Grants & Fundrasing Manager",
-    image: "",
+    image: achelles,
     text: "",
   },
   {
