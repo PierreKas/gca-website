@@ -19,7 +19,7 @@ const ImpactStories = () => {
 
   const testimonials = [
     {
-      name: "Pastor John Ssemakula",
+      name: "Pastor John Semakula",
       role: "Community Leader",
       text: "Game Connect Africa has transformed our community. We've seen children come off the streets, families strengthened, and hope restored. Their holistic approach really works.",
       rating: 5,
