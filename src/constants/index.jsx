@@ -40,6 +40,8 @@ import lydia from "../assets/team/lydia.jpeg";
 import mukiiza from "../assets/team/mukiiza.jpeg";
 import achelles from "../assets/team/achelles.jpeg";
 import peter from "../assets/team/peter.jpeg";
+import deborah from "../assets/team/deborah.JPG";
+import dephas from "../assets/team/dephas.jpeg";
 import eco1 from "../assets/testimony/econ1.jpeg";
 import eco2 from "../assets/testimony/econ2.jpeg";
 import eco3 from "../assets/testimony/econ3.jpeg";
@@ -71,16 +73,16 @@ export const team = [
     text: "",
     //text: "Bachelor of Commerce - MUK\nPostgraduate Diploma in Tax and Revenue Administration\n\nIvan has 3 years of Accounting, Finance and Fund Management in NGO sector , 3 years of Tax, Accounting and Finance experience in Private Sector\nCurrently working as a Domestic Tax Officer with Uganda Revenue Authority.",
   },
-  {
-    user: "Isumba B. Peter",
-    role: "Board member",
-    image: peter,
-    text: "",
-  },
+  // {
+  //   user: "Isumba B. Peter",
+  //   role: "Board member",
+  //   image: peter,
+  //   text: "",
+  // },
   {
     user: "Rev. Diphas L Mwanga",
     role: "Board member\nSpiritual leader",
-    image: "",
+    image: dephas,
     text: "",
   },
   {
@@ -92,7 +94,7 @@ export const team = [
   {
     user: "Kirabo Deborah",
     role: "Board member",
-    image: "",
+    image: deborah,
     text: "",
   },
   // Members
