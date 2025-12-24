@@ -15,36 +15,6 @@ const ImpactStories = () => {
       impact: "Economic Empowerment",
       location: "Jinja, Uganda",
     },
-    // {
-    //   name: "David Mukasa",
-    //   age: 16,
-    //   story:
-    //     "Through GCA's sports program, I discovered my talent for football. They helped me join a youth team and now I'm training to be a professional player. I also help coach younger kids in my community. Sports changed my life.",
-    //   image:
-    //     "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80",
-    //   impact: "Future Athlete",
-    //   location: "Kamuli, Uganda",
-    // },
-    // {
-    //   name: "Grace Namugga",
-    //   age: 12,
-    //   story:
-    //     "Before GCA came to our school, I was shy and scared to speak. The Peace Club taught me about my rights and gave me confidence. Now I'm a leader in my class and I help other girls feel safe and supported.",
-    //   image:
-    //     "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80",
-    //   impact: "Student Leader",
-    //   location: "Iganga, Uganda",
-    // },
-    // {
-    //   name: "James Waiswa",
-    //   age: 11,
-    //   story:
-    //     "I used to miss school a lot because I was sick. GCA's health program helped me get treatment for malaria and taught my family about hygiene. Now I'm healthy, I never miss school, and I'm top of my class!",
-    //   image:
-    //     "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?w=400&q=80",
-    //   impact: "Healthy & Thriving",
-    //   location: "Mayuge, Uganda",
-    // },
   ];
 
   const testimonials = [
