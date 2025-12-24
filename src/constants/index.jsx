@@ -42,6 +42,8 @@ import achelles from "../assets/team/achelles.jpeg";
 import peter from "../assets/team/peter.jpeg";
 import deborah from "../assets/team/deborah.JPG";
 import dephas from "../assets/team/dephas.jpeg";
+import joseph from "../assets/team/joseph.jpeg";
+import daniel from "../assets/team/daniel.jpeg";
 import eco1 from "../assets/testimony/econ1.jpeg";
 import eco2 from "../assets/testimony/econ2.jpeg";
 import eco3 from "../assets/testimony/econ3.jpeg";
@@ -63,7 +65,7 @@ export const team = [
   {
     user: "Kintu Daniel",
     role: "Board chairman",
-    image: "",
+    image: daniel,
     text: "",
   },
   {
@@ -119,7 +121,7 @@ export const team = [
   {
     user: "Byaruhanga Juma",
     role: "Sports Manager",
-    image: "",
+    image: joseph,
     text: "",
   },
 
