@@ -1,5 +1,6 @@
 import React from "react";
 import { organizationInfo, partners } from "../constants";
+
 import {
   Facebook,
   Twitter,
@@ -10,8 +11,30 @@ import {
   Linkedin,
   ArrowRight,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+
+    if (href.startsWith("/")) {
+      navigate(href);
+    } else if (href.startsWith("#")) {
+      const target = document.querySelector(href);
+      if (target) {
+        const navbarHeight = 80;
+        const offset =
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          navbarHeight;
+        window.scrollTo({ top: offset, behavior: "smooth" });
+      } else if (href === "#hero") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+  };
   return (
     <footer className="bg-[#607838] text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -157,8 +180,11 @@ const Footer = () => {
               </div>
             </div>
 
-            <button className="mt-8 w-full bg-[#F4A82D] hover:bg-[#F4A82D]/90 text-[#607838] font-bold py-3 rounded-full transition">
-              <a href="/donation">Donate Now</a>
+            <button
+              onClick={(e) => handleNavClick(e, "/donation")}
+              className="cursor-pointer mt-8 w-full bg-[#F4A82D] hover:bg-[#F4A82D]/90 text-[#607838] font-bold py-3 rounded-full transition"
+            >
+              Donate Now
             </button>
           </div>
         </div>
