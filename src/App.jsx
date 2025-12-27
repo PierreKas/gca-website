@@ -69,6 +69,7 @@ import Foooter from "./component/Foooter";
 import ContactAndLocation from "./component/Contact";
 import PartnersScroll from "./constants/PartnersScroll";
 import Team from "./component/Team";
+import DonationPage from "./component/Donate";
 
 const App = () => {
   return (
@@ -100,6 +101,7 @@ const App = () => {
           <Route path="/thematic-areas" element={<ThematicAreas />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/contact" element={<ContactAndLocation />} />
+          <Route path="/donation" element={<DonationPage />} />
         </Routes>
       </div>
 

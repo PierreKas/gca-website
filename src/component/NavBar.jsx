@@ -151,7 +151,7 @@ const NavBar = () => {
             {/* Donate Button - Desktop */}
             <div className="hidden lg:block">
               <button
-                onClick={(e) => handleNavClick(e, "/get-involved")}
+                onClick={(e) => handleNavClick(e, "/donation")}
                 className="bg-linear-to-r from-[#607838] to-[#F4A82D] text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
               >
                 Donate Now

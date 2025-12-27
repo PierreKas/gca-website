@@ -115,14 +115,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/get-involved"
-                  className="hover:text-[#F4A82D] transition"
-                >
-                  Get Involved
-                </a>
-              </li>
-              <li>
                 <a href="/contact" className="hover:text-[#F4A82D] transition">
                   Contact Us
                 </a>
@@ -164,8 +156,9 @@ const Footer = () => {
                 <p>gameconnectafica@gmail.com</p>
               </div>
             </div>
+
             <button className="mt-8 w-full bg-[#F4A82D] hover:bg-[#F4A82D]/90 text-[#607838] font-bold py-3 rounded-full transition">
-              Donate Now
+              <a href="/donation">Donate Now</a>
             </button>
           </div>
         </div>
