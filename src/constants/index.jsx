@@ -42,6 +42,7 @@ import achelles from "../assets/team/achelles.jpeg";
 import peter from "../assets/team/peter.jpeg";
 import deborah from "../assets/team/deborah.JPG";
 import dephas from "../assets/team/dephas.jpeg";
+import andrew from "../assets/team/andrew.jpeg";
 import joseph from "../assets/team/joseph.jpeg";
 import daniel from "../assets/team/daniel.jpeg";
 import eco1 from "../assets/testimony/econ1.jpeg";
@@ -129,7 +130,7 @@ export const team = [
   {
     user: "Muwanguzi Andrew",
     role: "Children Ministry",
-    image: "",
+    image: andrew,
     text: "",
   },
   {
