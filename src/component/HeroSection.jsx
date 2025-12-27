@@ -34,7 +34,7 @@ const HeroSection = () => {
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
             Building a healthy, socially, and economically empowered community
-            in Eastern Busoga Region through sports, education, and healthcare.
+            Uganda through sports, education, and healthcare.
           </p>
 
           {/* CTA Buttons */}
