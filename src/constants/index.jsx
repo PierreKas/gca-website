@@ -45,6 +45,7 @@ import dephas from "../assets/team/dephas.jpeg";
 import andrew from "../assets/team/andrew.jpeg";
 import joseph from "../assets/team/joseph.jpeg";
 import daniel from "../assets/team/daniel.jpeg";
+import justine from "../assets/team/justine.jpeg";
 import eco1 from "../assets/testimony/econ1.jpeg";
 import eco2 from "../assets/testimony/econ2.jpeg";
 import eco3 from "../assets/testimony/econ3.jpeg";
@@ -86,7 +87,7 @@ export const team = [
   {
     user: "Pastor Justine Mwanga",
     role: "Board member",
-    image: "",
+    image: justine,
     text: "",
   },
   {
