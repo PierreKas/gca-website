@@ -263,7 +263,7 @@ const NavBar = () => {
                       {/* Mobile Donate Button */}
                       <div className="mt-auto pt-6 border-t border-gray-100">
                         <button
-                          onClick={(e) => handleNavClick(e, "/get-involved")}
+                          onClick={(e) => handleNavClick(e, "/donation")}
                           className="w-full bg-linear-to-r from-[#607838] to-[#F4A82D] text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300"
                         >
                           Donate Now
