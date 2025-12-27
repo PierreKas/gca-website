@@ -367,8 +367,7 @@ export const playSkills = [
 ];
 
 export const organizationInfo = {
-  vision:
-    "A healthy, socially, and economically empowered community for a better Africa through sports for all.", // "A healthy, socially, and economically empowered community through sports.",
+  vision: "For a better Africa through sports for all.", // "A healthy, socially, and economically empowered community through sports.",
   mission:
     "To protect, educate and empower community to raise above diversity using the power of sports.", //"To provide equitable, inclusive, and affordable quality health care, economic empowerment, and social services to the community through sports.",
   description:
