@@ -46,6 +46,7 @@ import andrew from "../assets/team/andrew.jpeg";
 import joseph from "../assets/team/joseph.jpeg";
 import daniel from "../assets/team/daniel.jpeg";
 import justine from "../assets/team/justine.jpeg";
+import denume from "../assets/team/denume.jpeg";
 import eco1 from "../assets/testimony/econ1.jpeg";
 import eco2 from "../assets/testimony/econ2.jpeg";
 import eco3 from "../assets/testimony/econ3.jpeg";
@@ -59,9 +60,9 @@ export const team = [
   },
   {
     user: "Lydia Ntono",
-    role: "Co-Founder & Sustainable development Director",
+    role: "National Director & Sustainable development Director",
     image: lydia,
-    text: "Lydia Ntono is a Co-Founder & Sustainable development Director of Game Connect Africa (GCA)",
+    text: "Lydia Ntono is the National Director & Sustainable development Director of Game Connect Africa (GCA)",
   },
   // Board
   {
@@ -79,7 +80,7 @@ export const team = [
   },
 
   {
-    user: "Rev. Diphas L Mwanga",
+    user: "Rev. Diphas Lukabyo",
     role: "Board member\nSpiritual leader",
     image: dephas,
     text: "",
@@ -104,9 +105,9 @@ export const team = [
     text: "",
   },
   {
-    user: "Ambrosse Demune",
+    user: "Ambrosse Denume",
     role: "Programs Officer",
-    image: "",
+    image: denume,
     text: "",
   },
   {
@@ -368,7 +369,7 @@ export const playSkills = [
 ];
 
 export const organizationInfo = {
-  vision: "For a better Africa through sports for all.", // "A healthy, socially, and economically empowered community through sports.",
+  vision: "For a better Uganda through sports for all.", // "A healthy, socially, and economically empowered community through sports.",
   mission:
     "To protect, educate and empower community to raise above diversity using the power of sports.", //"To provide equitable, inclusive, and affordable quality health care, economic empowerment, and social services to the community through sports.",
   description:
