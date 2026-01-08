@@ -369,9 +369,10 @@ export const playSkills = [
 ];
 
 export const organizationInfo = {
-  vision: "For a better Uganda through sports for all.", // "A healthy, socially, and economically empowered community through sports.",
+  vision:
+    "To develop spiritual leaders in every community who can teach others about the love of Christ, a love that cannot be earned and canoot be lost", // "A healthy, socially, and economically empowered community through sports.",
   mission:
-    "To protect, educate and empower community to raise above diversity using the power of sports.", //"To provide equitable, inclusive, and affordable quality health care, economic empowerment, and social services to the community through sports.",
+    "To support and transform vulnerable communities in Uganda through sport-based outreach that shares the love of God and brings lasting hope.", //"To provide equitable, inclusive, and affordable quality health care, economic empowerment, and social services to the community through sports.",
   description:
     "Game Connect Africa is a Community Based Organization (CBO) aimed to protect, educate and empower community to raise above diversity using the power of sport for sustainable development in the Communities of Uganda through transformative leadership, advocacy, sexual Reproductive health education, and skills development.",
   approach:
